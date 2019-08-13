@@ -7,6 +7,13 @@
     text-transform:capitalize;
     color: #666666;
 }
+.navbar
+{
+    background-color: #F5F5F5;
+    border-bottom: 2px #F0F0F0;
+    border-bottom-style: inset;
+    
+}
 *
 {
     margin: 0px;
@@ -20,8 +27,7 @@
 #sidebar
 {
     position: fixed;
-    width: 200px;
-    height: 100%;
+    width: 150px;
     background: ;
     left: -1px;
     transition: all 500ms linear;
@@ -90,7 +96,7 @@ display: none;
     #sidebar
     {
         left: 0px;
-        width: 200px;
+        width: 150px;
     }
     #sidebar .dash_text
     {
@@ -102,8 +108,10 @@ display: none;
     }
     #sidebar.active
     {
-        background-color: #E0E0E0;
+        background-color: #F5F5F5;
         z-index: 1;
+        border-right-style: inset;
+        border-bottom-style: inset;
     }
 }
 @media screen and (max-width: 600px)
@@ -236,8 +244,8 @@ table td
      border: 3px solid white;
 }
     
-tr:nth-child(even){background-color:#E7C1C5}
-tr:nth-child(odd){background-color:#F7EAEB}
+tr:nth-child(even){background-color:	#E8E8E8}
+tr:nth-child(odd){background-color:#F5F5F5}
 
 th {
   background-color: #AA1E2D;
@@ -470,8 +478,21 @@ label
 {
     background-color: #E0E0E0;
     padding: 5px;
+    padding-left: 3px;
 }
-@media screen and (max-width: 800px)
+.tablehead1
+{
+    background-color: #E0E0E0;
+    padding: 5px;
+}
+@media screen and (max-width: 570px)
+{
+    .tablehead1
+    {
+        width: 570px;
+    }
+}
+@media screen and (max-width: 900px)
 {
     #postjob
     {
@@ -480,7 +501,7 @@ label
 }
 @media screen and (max-width: 485px)
 {
-    .tablehead
+    .tablehead , .tablehead1
     {
         width: 450px;
     }
@@ -498,4 +519,11 @@ label
     {
         margin-left: -40px;
     }
+}
+#postjob
+{
+    color:#AA1E2D;
+    border: 1px solid #C0C0C0;
+    border-radius: 25px;
+    background-color: #F5F5F5;
 }
